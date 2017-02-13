@@ -1,0 +1,28 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.10'
+}
+
+idea {
+    project {
+        jdkName = '1.8'
+        languageLevel = '1.8'
+        outputFile = new File(outputFile.parentFile, 'Spacecraft.ipr')
+    }
+}
+
+sourceSets{
+    main.java.srcDir "src/main"
+    test.java.srcDir "src/test"
+}
+
+jar {
+    manifest.attributes "Main-Class": "de.david.worksample.MainApplication"
+}
+

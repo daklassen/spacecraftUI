@@ -1,0 +1,212 @@
+.background {
+    -fx-background-color: #272c30;
+}
+
+.background-menu {
+    -fx-background-color: #363e41;
+}
+
+.label-big {
+    -fx-text-fill: #efefef;
+    -fx-font: 28pt "Roboto Lt";
+}
+
+.label-middle {
+    -fx-text-fill: #efefef;
+    -fx-font: 18pt "Roboto";
+}
+
+.label-small {
+    -fx-font: 12pt "Roboto Fett";
+    -fx-spacing: 100%;
+    -fx-text-fill: grey;
+    -fx-opacity: 1;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: #32363a;
+    -fx-padding: 1px;
+}
+
+.split-pane {
+    -fx-padding: 0 0 0 0;
+}
+
+
+.root {
+    -fx-font: 20pt "Roboto Lt";
+    -fx-text-fill: #00aedb;
+}
+
+.text-field {
+    -fx-font-size: 28pt;
+    -fx-text-fill: white;
+    -fx-background-color: #363e41;
+    -fx-prompt-text-fill: grey;
+}
+
+.text-field-filter {
+    -fx-font: 12pt Roboto;
+    -fx-text-fill: black;
+    -fx-max-height: 24px;
+    -fx-min-height: 24px;
+    -fx-background-color: lightgrey;
+    -fx-prompt-text-fill: #363e41;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.custom-button-bar {
+    -fx-background-color: #32363a;
+}
+
+.button {
+    -fx-padding: 2 16 2 16;
+    -fx-border-color: transparent;
+    -fx-background-radius: 3;
+    -fx-background-color: #EF5350;
+    -fx-font-size: 10pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto";
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: #d3524f;
+}
+
+.button-clean {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-padding: 0 10 0 0;
+}
+
+
+.list-cell {
+    -fx-padding: 0 0 0 0 ;
+    -fx-background-color: transparent, #32363a ;
+    -fx-background-insets: 0px, 1px, 0px, 0px ;
+    -fx-text-fill: white;
+    -fx-font-smoothing-type: gray;
+    -fx-font: 14pt "Roboto";
+    -fx-alignment: baseline-left;
+}
+
+.list-cell-2 {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px, 1px, 0px, 0px ;
+    -fx-text-fill: white;
+    -fx-padding: 26px;
+    -fx-font-smoothing-type: gray;
+    -fx-font: 14px "Roboto";
+}
+
+.list-cell:empty {
+    -fx-padding: 0px ;
+    -fx-background-color: transparent ;
+    -fx-background-insets: 0 ;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: transparent, #4c4e50 ;
+    -fx-background-insets: 0px, 1px, 0px, 0px ;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected:hover{
+    -fx-background-color: transparent, #5ab4ad ;
+    -fx-background-insets: 0px, 1px, 0px, 0px ;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected{
+    -fx-background-color: transparent, #5ab4ad ;
+    -fx-background-insets: 0px, 1px, 0px, 0px ;
+    -fx-text-fill: white;
+}
+
+.list-view {
+    -fx-background-color: #272c30;
+}
+
+.customListview .scroll-bar:vertical ,
+.customListview .scroll-bar:horizontal{
+    -fx-background-color: #272c30;
+}
+
+
+.customListview .scroll-bar:vertical .increment-button ,
+.customListview .scroll-bar:vertical .decrement-button ,
+.customListview .scroll-bar:horizontal .increment-button ,
+.customListview .scroll-bar:horizontal .decrement-button {
+    -fx-opacity: 0;
+    -fx-background-radius: 0;
+    -fx-padding:0 0 -8 0;
+    -fx-shape: null;
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+}
+
+.customListview .scroll-bar:vertical .thumb,
+.customListview .scroll-bar:horizontal .thumb{
+    -fx-background-color: #32363a;
+    -fx-background-insets: 1, 0, 0;
+    -fx-background-radius: 1px;
+
+}
+
+.list-view .scroll-bar:vertical .track-background,
+.list-view .scroll-bar:horizontal .track-background{
+    visibility: hidden;
+    -fx-opacity: 0;
+}
+
+.list-view .scroll-bar:vertical .track,
+.list-view .scroll-bar:horizontal .track{
+    visibility: hidden;
+    -fx-opacity: 0;
+}
+
+/*Dialogs*/
+.dialog-pane {
+    -fx-background-color: pink;
+}
+
+.dialog-pane > .button-bar {
+    -fx-font-size: 24px;
+    -fx-background-color: green;
+    -fx-alignment: baseline-center;
+}
+
+.dialog-pane > .content.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: yellow;
+    -fx-text-fill: #00aedb;
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+}
+
+.radio-button .radio {
+    -fx-padding: 5px;
+}
+
+.radio-button .dot {
+    -fx-padding: 4px;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #363e41;
+    -fx-font-size: 20px;
+    -fx-border-width: 6px;
+    -fx-padding: 7 0 2 13;
+    -fx-text-fill: grey;
+}
+
+.combo-box .list-cell:selected {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" styleClass="background" stylesheets="@../DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.david.worksample.view.ChangeSpacecraftDialogController">
+      <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="headlineLabel" alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="370.0" styleClass="label-big" text="Create Spacecraft">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="identificationTextField" promptText="Identification">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="captainTextField" promptText="Captain">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <DatePicker fx:id="commissioningDatePicker" editable="false" maxWidth="381.0" minWidth="200.0" prefHeight="40.0" prefWidth="400.0" promptText="Commissioning">
+               <VBox.margin>
+                  <Insets bottom="15.0" left="10.0" right="10.0" />
+               </VBox.margin></DatePicker>
+            <ComboBox fx:id="typeComboBox" prefHeight="40.0" prefWidth="400.0" promptText="Type">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ComboBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="availableCheckBox" mnemonicParsing="false">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></RadioButton>
+                     <Label styleClass="label-middle" text="Online">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+               </children>
+            </HBox>
+            <Label fx:id="idLabel" opacity="0.0" />
+         </children>
+      </VBox>
+         <ButtonBar buttonMinWidth="50.0" layoutX="347.0" layoutY="377.0" prefHeight="50.0" prefWidth="408.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0">
+            <buttons>
+               <Button fx:id="changeButton" mnemonicParsing="false" onAction="#handleChange" text="Create" />
+               <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            </buttons>
+         </ButtonBar>
+      </children>
+   </AnchorPane>
