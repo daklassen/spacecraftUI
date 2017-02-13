@@ -1,4 +1,3 @@
-======
 #SpacecraftUI
 
 Little (fun) project for learning the basics of JavaFX.
