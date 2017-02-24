@@ -16,6 +16,6 @@ cd spacecraftUI
 ```
 Build the Intellij project with gradle:
 ```
-gradle cleanidea idea
+gradlew cleanidea idea
 ```
 Now you can open the generated Intellij project and start working on the projekt.
